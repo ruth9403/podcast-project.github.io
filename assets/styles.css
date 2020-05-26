@@ -499,16 +499,19 @@ body {
   .nav {
     min-height: 80px;
   }
-  .nav li {
+  .nav ul {
+    width: 550px;
+  }
+  .nav ul li {
     float: left;
   }
-  .nav li a {
+  .nav ul li a {
     font-size: 16px;
     padding: 24px 26px;
   }
   .nav .menu {
     margin-top: 0;
-    margin-left: 880px;
+    margin-left: 790px;
     clear: none;
     float: right;
     max-height: none;
