@@ -1,0 +1,44 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    h4{
+        font-family: $font-fam-general;
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 16px;
+        font-weight: 1;
+    }
+    nav{
+        margin: 0 auto;
+        .social{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns:repeat(5, 16px);
+            column-gap: 38px;
+            grid-template-rows: 28px;
+            align-items: center;
+            margin-bottom: 31px;
+            li a{
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                height: 28px;
+                width: 14px;
+                color: #060A24;
+            }
+
+        }
+    }
+    
+    
+}

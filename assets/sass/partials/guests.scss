@@ -1,0 +1,25 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.guests{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    h2{
+        @include titles-all;
+        margin-top: 54px;
+        margin-bottom: 14px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .images{
+        display: flex;
+        flex-flow: column wrap;
+        margin: 0 auto;
+        img{
+            max-width: 320px;
+            max-height: 243px;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 16px;
+    margin-top: 29px;
+    h1{
+        @include titles-all;
+        color: #060A24;
+        padding: 0;
+        margin: 0;
+    }
+    .line-through{
+        text-decoration: line-through;
+        padding-left: 9px;
+    }
+    .mobile{
+        @include general-all;
+    }
+    .desktop{
+        display: none;
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+    .button-first{
+       @include buttons-all;
+       &:hover{
+        background-color: rgb(11, 236, 124);
+        transition: .4s ease-in-out;
+       }
+
+    
+    }
+
+    
+    
+
+
+
+}

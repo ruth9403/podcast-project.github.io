@@ -1,0 +1,268 @@
+@import "partials/variables.scss";
+@import "partials/navigation-top.scss";
+@import "partials/header.scss";
+@import "partials/blue-oblique.scss";
+@import "partials/mixins.scss";
+@import "partials/middle.scss";
+@import "partials/guests.scss";
+@import "partials/others.scss";
+@import "partials/more-news.scss";
+@import "partials/footer.scss";
+
+@media screen and (min-width: 700px){
+    .header{
+        .dot{
+            color: #0000EC;
+        }
+        .mobile{
+            display: none;
+        }
+        .desktop{
+            @include general-all;
+            display: block;
+            max-width: 90%;
+            height: 48px;
+            font-size: 16px;
+            margin: 0;
+        }
+        .button-first{
+            font-size: 18px;
+            line-height: 24px;
+            max-width: 226px;
+            max-height: 30%;
+            margin-top: 20px;
+           // margin-left: -628px;
+        } 
+    }
+    .blue{
+        .iframes-all{
+            grid-template-columns:repeat(2, 284px);
+            grid-template-rows: repeat(2, 232px);
+            row-gap: 52px;
+            column-gap: 72px;
+            margin-bottom: 150px;
+            div{
+                max-width: 584px;
+                max-height: 232px;
+                overflow: hidden;
+            }
+        
+        }
+    }
+    .others{
+        margin-bottom: 34px;
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: 11px;
+            .topic{
+                width:160px;
+                margin-bottom: 0;
+                img{
+                    margin-bottom: 29px;
+                }
+                h3{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .more-news{
+        justify-content: center;
+        text-align: center;
+        button{
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 24px;
+            max-width: 226px;
+            max-height: 30%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+} 
+
+
+@media screen and (min-width: 1440px){ 
+    .nav {
+        min-height: 80px;
+        li {
+            float:left;
+            a{
+                font-size:16px;
+                padding: 24px 26px;
+            }
+        }
+        .menu{
+            margin-top: 0;
+            margin-left: 880px;
+            clear:none;
+            float: right;
+            max-height: none;
+            
+        }
+        .menu-icon{
+            display: none;
+        }
+        
+
+    }
+    
+    .header{
+        margin-left: 200px;
+        margin-top: 120px;
+        flex-flow: row wrap;
+        h1{
+            line-height: 84px;
+            font-size: 64px;
+        }
+        .line-through{
+            padding-right: 9px;
+        }
+        .dot{
+            color: #0000EC;
+        }
+        .mobile{
+            display: none;
+        }
+        .desktop{
+            @include general-all;
+            display: block;
+            max-width: 628px;
+            height: 48px;
+            font-size: 16px;
+            margin: 0;
+        }
+        .button-first{
+            font-size: 18px;
+            line-height: 24px;
+            max-width: 226px;
+            max-height: 56px;
+            margin-top: 112px;
+            margin-left: -628px;
+        } 
+    }
+    .blue{
+        margin-top: 5px;
+        clip-path: polygon(0 10%, 100% 0%, 100% (100% - 10%), 0% 100%);
+        h2{
+            margin-top: 186px;
+            margin-left: 200px;
+            font-size: 48px;
+            max-width: 209px;
+            margin-bottom: 26px;
+        }
+        .iframes-all{
+            grid-template-columns:repeat(2, 584px);
+            grid-template-rows: repeat(2, 232px);
+            row-gap: 72px;
+            column-gap: 72px;
+            margin-bottom: 232.6px;
+            div{
+                max-width: 584px;
+                max-height: 232px;
+                overflow: hidden;
+            }
+        }
+    }
+    .middle{
+        margin: 0 auto;
+        flex-flow: row;
+        justify-content: center;
+        .phone{
+            width: 457.6px;
+            margin-right: 62.4px;
+            margin-left: 200px;
+            img{
+                max-height: 660px;
+                max-width: 457.6px;
+                margin-top: -168.6px;
+            }
+        }
+        article{
+            max-width: 464px;
+            margin-right: 256px;
+        }
+    }
+    .guests{
+        h2{
+            margin-top: 64px;
+            margin-left: 200px;
+            font-size: 48px;
+            margin-bottom: 36px;
+            max-width: 481px;
+            max-height: 62px;
+        }
+        .images{
+            flex-flow: row wrap;
+            img{
+                max-width: 480px;
+                max-height: 364px;
+            }
+        }
+    }
+    .others{
+        margin-bottom: 34px;
+        h2{
+            margin-top: 64px;
+            margin-left: 200px;
+            margin-bottom: 56px;
+            max-height: 62px;
+            max-width: 586px;
+        }
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: 200px;
+            .topic{
+                width:260px;
+                height: 197px;
+                margin-bottom: 0;
+                img{
+                    margin-bottom: 29px;
+                }
+                h3{
+                    font-size: 24px;
+                }
+            }
+        }
+
+    }
+    .more-news{
+        clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+        h2{
+            max-height: 62px;
+            max-width: 692px;
+            font-size: 48px;
+            margin-top: 213px;
+            margin-left: 374px;  
+        }
+        button{
+            max-width: 345px;
+            height: 56px;
+            margin-bottom: 151px;
+            margin-left: 547px;
+        }
+    }
+    .footer{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        h4{
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 1;
+            margin-top: 36px;
+            margin-left: 100px;
+        }
+        nav{
+            margin: 0;
+            .social{
+                margin-right: 100px;
+                margin-top: 36px;
+            }
+        }
+    }
+
+}
+
+//@media screen and (min-width:$desktop){}

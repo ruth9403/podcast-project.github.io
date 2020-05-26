@@ -1,0 +1,31 @@
+@import "variables.scss";
+
+@mixin titles-all{
+    display: inline;
+    line-height: 42px;
+    letter-spacing: 0;
+    font-family: $font-fam-title;
+    font-size: $font-size-title;
+    font-weight: 300;
+}
+@mixin general-all{
+    font-family: $font-fam-general;
+    font-size:$font-size-general;
+    margin-right: 16px;
+    margin-top: 16px;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+@mixin buttons-all{
+    width: 100%;
+    margin-right: 16px;
+    margin-top: 36px;
+    padding: 0;
+    height: 48px;
+    border: 0;
+    background-color: #00F3BB;
+    font-family:$font-fam-general;
+    font-size: 16px;
+   
+}

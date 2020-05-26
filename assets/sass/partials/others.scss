@@ -1,0 +1,42 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.others{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    h2{
+        @include titles-all;
+        margin-top: 48px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 37px;
+    }
+    .topic{
+        text-align: center;
+        margin-bottom: 65px;
+        img{
+            max-width: 104px;
+            max-height: 104px;
+            margin-bottom: 13px;
+        }
+        h3{
+            font-family: $font-fam-title;
+            font-size: 24px;
+            color: #060A24;
+            letter-spacing: 0;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    .one{
+        margin-bottom: 49px;
+    }
+    .fourth{
+        margin-bottom: 42px;
+    }
+
+
+}
