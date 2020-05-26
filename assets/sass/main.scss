@@ -31,7 +31,6 @@
             max-width: 226px;
             max-height: 30%;
             margin-top: 20px;
-           // margin-left: -628px;
         } 
     }
     .blue{
@@ -67,6 +66,16 @@
             }
         }
     }
+    .guests{
+        .images{
+            flex-flow: row wrap;
+            justify-content: center;
+            img{
+                max-width: 380px;
+                max-height: 264px;
+            }
+        }
+    }
     .more-news{
         justify-content: center;
         text-align: center;
@@ -80,7 +89,7 @@
             margin-bottom: 20px;
         }
     }
-} 
+}
 
 
 @media screen and (min-width: 1440px){ 
