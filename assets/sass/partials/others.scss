@@ -37,6 +37,53 @@
     .fourth{
         margin-bottom: 42px;
     }
+}
+@media screen and (min-width: 700px){
+    .others{
+        margin-bottom: 34px;
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0 auto;
+            .topic{
+                width:160px;
+                margin-bottom: 0;
+                img{
+                    margin-bottom: 29px;
+                }
+                h3{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1440px){ 
+    .others{
+        margin-bottom: 34px;
+        h2{
+            margin-top: 64px;
+            margin-left: 200px;
+            margin-bottom: 56px;
+            max-height: 62px;
+            max-width: 586px;
+        }
+        .container{
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: 200px;
+            .topic{
+                width:260px;
+                height: 197px;
+                margin-bottom: 0;
+                img{
+                    margin-bottom: 29px;
+                }
+                h3{
+                    font-size: 24px;
+                }
+            }
+        }
 
-
+    }
 }

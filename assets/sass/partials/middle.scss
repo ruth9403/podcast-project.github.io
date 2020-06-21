@@ -6,7 +6,6 @@
     padding: 0;
     display: flex;
     flex-flow: column;
-   // transform: translateY(-95.5px);
     .phone{
         margin: 0 auto;
         img{
@@ -15,16 +14,13 @@
             margin-top: -95.5px;
             position: relative;
             z-index: 10;
-            
         }
     }
     article{
-        margin: 0;
-        padding: 0;
+        margin: 0 auto;
+        padding: 0 16px 0 16px;
         display: flex;
         flex-flow: column;
-        padding-left: 16px;
-        padding-right: 16px;
         h2{
             @include titles-all;
             margin-top: 27px;
@@ -44,6 +40,26 @@
                 margin-top: 12px;
             }
         }
-
+    }
+}
+@media screen and (min-width: 1440px){
+    .middle{
+        margin: 0 auto;
+        flex-flow: row;
+        justify-content: center;
+        .phone{
+            width: 457.6px;
+            margin-right: 62.4px;
+            margin-left: 200px;
+            img{
+                max-height: 660px;
+                max-width: 457.6px;
+                margin-top: -168.6px;
+            }
+        }
+        article{
+            max-width: 464px;
+            margin-right: 256px;
+        }
     }
 }

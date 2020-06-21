@@ -24,9 +24,42 @@
         margin-bottom: 67px;
         margin-right: 16px;
         &:hover{
-            background-color: rgb(11, 236, 124);
+            background: linear-gradient(to left, #0000FE, #00F0B8);
+            color:#FFFFFF;
             transition: .4s ease-in-out;
-
+        }
+    }
+}
+@media screen and (min-width: 700px){
+    .more-news{
+        justify-content: center;
+        text-align: center;
+        button{
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 24px;
+            max-width: 226px;
+            max-height: 30%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media screen and (min-width: 1440px){
+    .more-news{
+        clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+        h2{
+            max-height: 62px;
+            max-width: 692px;
+            font-size: 48px;
+            margin-top: 213px;
+            margin-left: 374px;  
+        }
+        button{
+            max-width: 345px;
+            height: 56px;
+            margin-bottom: 151px;
+            margin-left: 547px;
         }
     }
 }

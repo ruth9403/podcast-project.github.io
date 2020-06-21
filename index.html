@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="autor" content="Melissa Jiménez">
+    <meta name="autor" content="Ruth Melissa Jiménez">
+    <meta name="Description" content="Podcast about women in programming">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='assets/sass/normalize.css'>
@@ -17,10 +18,10 @@
         <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span>
         </label>
         <ul class="menu">
-            <li><a href="#episodios" title="episodios">EPISODIOS</a></li>
-            <li><a href="#nosotros" title="nosotros">NOSOTROS</a></li>
-            <li><a href="#entrevistas" title="entrevistas">ENTREVISTAS</a></li>
-            <li><a href="#topicos" title="topicos">TÓPICOS</a></li>
+            <li><a href="#episodios" title="episodios" aria-label="Ver espisodios">EPISODIOS</a></li>
+            <li><a href="#nosotros" title="nosotros" aria-label="Ver Nosotros">NOSOTROS</a></li>
+            <li><a href="#entrevistas" title="entrevistas" aria-label="Ver Entrevistas">ENTREVISTAS</a></li>
+            <li><a href="#topicos" title="topicos" aria-label="Ver Tópicos">TÓPICOS</a></li>
         </ul>
     </nav>
     <header id="header" class="header">
@@ -38,16 +39,16 @@
         <h2>Episodios</h2>
         <div class="iframes-all"> 
             <div>
-                <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe title="It's just JavaScript" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
            <div> 
-               <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+               <iframe title="The Fundamentals: HTML+CSS" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
             <div>
-                <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe title="The Open Office" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
            <div> 
-               <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+               <iframe title="Caching GraphQL with Michael Kelly" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </div>
         </div>
     </main>
@@ -65,14 +66,14 @@
     </section>
     <section class="guests" id="entrevistas">
         <h2>Invitadas/os estelares</h2>
-        <div class="images">
+        <figure class="images">
             <img src="assets/images/grace-hopper.png" alt="Grace hopper">
             <img src="assets/images/Katie-Bouman.png" alt="Katie Bouman">
             <img src="assets/images/Margaret_Hamilton.png" alt="Margaret Hamilton">
             <img src="assets/images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A. Univac 1103 computer in the 1950's">
             <img src="assets/images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
             <img src="assets/images/susan-kare.png" alt="Susan Kare">
-        </div>
+        </figure>
     </section>
     <section class="others" id="topicos">
         <h2>Algunos de nuestros temas</h2>
@@ -91,7 +92,7 @@
             </div>
             <div class="topic fourth">
                 <img src="assets/images/icon4.svg" alt="">
-                <h3>Bases del código</h3>
+                <h3>Seguridad Informática</h3>
             </div>
         </div>
         
@@ -104,11 +105,11 @@
       <h4> <i class="far fa-copyright"></i> 2019- Hello blue pale dot </h4>
       <nav>
           <ul class="social">
-              <li><a href="https://www.spotify.com/co/" target="_blank"><i class="fab fa-spotify"></i></a></li>
-              <li><a href="https://www.instagram.com/ruth9403/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://twitter.com/ruthy9403" target="_blank"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://www.facebook.com/ruthy.jimenez/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="https://web.telegram.org/#/login" target="_blank"><i class="fab fa-telegram"></i></a></li>
+              <li><a href="https://www.spotify.com/co/" target="_blank" rel="noopener" aria-label="Ver Spotify page"><i class="fab fa-spotify"></i></a></li>
+              <li><a href="https://www.instagram.com/ruth9403/?hl=es-la" target="_blank" rel="noopener" aria-label="Ver Instagram page del Creador"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/ruthy9403" target="_blank" rel="noopener" aria-label="Ver Twitter page del Creador"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/ruthy.jimenez/" target="_blank" rel="noopener" aria-label="Ver Facebook page del Creador"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="https://web.telegram.org/#/login" target="_blank" rel="noopener" aria-label="Ver Telegram page del Creador"><i class="fab fa-telegram"></i></a></li>
           </ul>
       </nav>  
     </footer>

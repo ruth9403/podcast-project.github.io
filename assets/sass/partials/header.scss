@@ -2,12 +2,10 @@
 @import "mixins.scss";
 
 .header{
-    margin: 0;
+    margin: 29px 0 0 16px;
     padding: 0;
     display: flex;
     flex-flow: row wrap;
-    margin-left: 16px;
-    margin-top: 29px;
     h1{
         @include titles-all;
         color: #060A24;
@@ -23,22 +21,82 @@
     }
     .desktop{
         display: none;
-        margin-right: 16px;
-        margin-bottom: 0;
     }
     .button-first{
        @include buttons-all;
        &:hover{
-        background-color: rgb(11, 236, 124);
+        background: linear-gradient(to left, #0000FE, #00F0B8);
+        color:#FFFFFF;
         transition: .4s ease-in-out;
        }
-
-    
     }
+}
 
-    
-    
+@media screen and (min-width: 700px){
+    .header{
+        .dot{
+            color: #0000EC;
+        }
+        .mobile{
+            display: none;
+        }
+        .desktop{
+            @include general-all;
+            display: block;
+            max-width: 90%;
+            height: 48px;
+            font-size: 16px;
+            margin: 0;
+        }
+        .button-first{
+            font-size: 18px;
+            line-height: 24px;
+            max-width: 226px;
+            max-height: 30%;
+            margin: 0 auto;
+            margin-top: 20px;
+        } 
+    }
+}
+@media screen and (min-width: 1000px){
+    .header{
+        margin-left: 80px;
+    } 
+}
 
-
-
+@media screen and (min-width: 1440px){
+    .header{
+        margin-left: 200px;
+        margin-top: 120px;
+        flex-flow: row wrap;
+        h1{
+            line-height: 84px;
+            font-size: 64px;
+        }
+        .line-through{
+            padding-right: 9px;
+        }
+        .dot{
+            color: #0000EC;
+        }
+        .mobile{
+            display: none;
+        }
+        .desktop{
+            @include general-all;
+            display: block;
+            max-width: 628px;
+            height: 48px;
+            font-size: 16px;
+            margin: 0;
+        }
+        .button-first{
+            font-size: 18px;
+            line-height: 24px;
+            max-width: 226px;
+            max-height: 56px;
+            margin-top: 112px;
+            margin-left: -628px;
+        } 
+    }
 }

@@ -8,18 +8,41 @@
     flex-flow: column;
     h2{
         @include titles-all;
-        margin-top: 54px;
-        margin-bottom: 14px;
-        margin-left: 16px;
-        margin-right: 16px;
+        margin: 54px 16px 14px 16px;
     }
     .images{
-        display: flex;
-        flex-flow: column wrap;
+        /*display: flex;
+        flex-flow: column wrap;*/
         margin: 0 auto;
+        display: grid;
+        background-color: red;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         img{
-            max-width: 320px;
-            max-height: 243px;
+            width: 100%;
         }
     }
 }
+
+@media screen and (min-width: 1440px){ 
+    .guests{
+        h2{
+            margin-top: 64px;
+            margin-left: 200px;
+            font-size: 48px;
+            margin-bottom: 36px;
+            max-width: 481px;
+            max-height: 62px;
+        }
+        .images{
+            display: flex;
+            flex-flow: row wrap;
+            img{
+                max-width: 480px;
+                max-height: 364px;
+            }
+        }
+    }
+}
+
+
+

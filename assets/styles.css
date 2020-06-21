@@ -12,13 +12,12 @@ body {
   position: relative;
 }
 .nav ul {
-  margin: 0;
+  margin: 44px 0 0 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #0000EC;
   position: absolute;
-  margin-top: 44px;
   width: 100%;
 }
 .nav ul li a {
@@ -27,8 +26,7 @@ body {
   border-right: 1px solid #f4f4f4;
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 14px;
-  text-align: center;
-  color: #060A24;
+  color: #FFFFFF;
   text-decoration: none;
 }
 .nav .logo_nav {
@@ -44,9 +42,7 @@ body {
 .nav .logo_nav img {
   width: 24px;
   height: 24px;
-  margin-left: 16px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0 10px 16px;
 }
 .nav .menu {
   clear: both;
@@ -118,13 +114,44 @@ body {
   top: 0;
 }
 
+@media screen and (min-width: 1440px) {
+  .nav {
+    min-height: 80px;
+  }
+  .nav ul {
+    width: 550px;
+    background-color: #fff;
+  }
+  .nav ul li {
+    float: left;
+  }
+  .nav ul li a {
+    color: #060A24;
+    font-size: 16px;
+    padding: 24px 26px;
+  }
+  .nav .menu {
+    margin-top: 0;
+    margin-left: 790px;
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .nav .menu-icon {
+    display: none;
+  }
+  .nav .logo_nav img {
+    width: 36px;
+    height: 36px;
+    margin-left: 100px;
+    margin-top: 22px;
+  }
+}
 .header {
-  margin: 0;
+  margin: 29px 0 0 16px;
   padding: 0;
   display: flex;
   flex-flow: row wrap;
-  margin-left: 16px;
-  margin-top: 29px;
 }
 .header h1 {
   display: inline;
@@ -151,8 +178,6 @@ body {
 }
 .header .desktop {
   display: none;
-  margin-right: 16px;
-  margin-bottom: 0;
 }
 .header .button-first {
   width: 100%;
@@ -166,10 +191,86 @@ body {
   font-size: 16px;
 }
 .header .button-first:hover {
-  background-color: #0bec7c;
+  background: linear-gradient(to left, #0000FE, #00F0B8);
+  color: #FFFFFF;
   transition: 0.4s ease-in-out;
 }
 
+@media screen and (min-width: 700px) {
+  .header .dot {
+    color: #0000EC;
+  }
+  .header .mobile {
+    display: none;
+  }
+  .header .desktop {
+    font-family: "IBM Plex Mono", sans-serif;
+    font-size: 14px;
+    margin-right: 16px;
+    margin-top: 16px;
+    line-height: 22px;
+    margin-bottom: 0;
+    display: block;
+    max-width: 90%;
+    height: 48px;
+    font-size: 16px;
+    margin: 0;
+  }
+  .header .button-first {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 226px;
+    max-height: 30%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header {
+    margin-left: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header {
+    margin-left: 200px;
+    margin-top: 120px;
+    flex-flow: row wrap;
+  }
+  .header h1 {
+    line-height: 84px;
+    font-size: 64px;
+  }
+  .header .line-through {
+    padding-right: 9px;
+  }
+  .header .dot {
+    color: #0000EC;
+  }
+  .header .mobile {
+    display: none;
+  }
+  .header .desktop {
+    font-family: "IBM Plex Mono", sans-serif;
+    font-size: 14px;
+    margin-right: 16px;
+    margin-top: 16px;
+    line-height: 22px;
+    margin-bottom: 0;
+    display: block;
+    max-width: 628px;
+    height: 48px;
+    font-size: 16px;
+    margin: 0;
+  }
+  .header .button-first {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 226px;
+    max-height: 56px;
+    margin-top: 112px;
+    margin-left: -628px;
+  }
+}
 .blue {
   padding-top: 0;
   margin-top: 24px;
@@ -186,27 +287,61 @@ body {
   font-size: 36px;
   font-weight: 300;
   color: #FFFFFF;
-  margin-top: 64px;
-  margin-left: 16px;
+  margin: 64px 0 21px 16px;
   max-width: 157px;
-  margin-bottom: 21px;
 }
 .blue .iframes-all {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 298px;
-  grid-template-rows: repeat(4, 225px);
+  grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
   row-gap: 11px;
   margin-bottom: 143.5px;
 }
 .blue .iframes-all div {
-  margin: 0;
-  padding: 0;
   max-width: 298px;
   max-height: 225px;
   overflow: hidden;
 }
 
+@media screen and (min-width: 700px) {
+  .blue .iframes-all {
+    grid-template-columns: repeat(2, 284px);
+    grid-template-rows: repeat(2, 232px);
+    row-gap: 52px;
+    column-gap: 72px;
+    margin-bottom: 150px;
+  }
+  .blue .iframes-all div {
+    max-width: 584px;
+    max-height: 232px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .blue {
+    margin-top: 5px;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  }
+  .blue h2 {
+    margin-top: 186px;
+    margin-left: 200px;
+    font-size: 48px;
+    max-width: 209px;
+    margin-bottom: 26px;
+  }
+  .blue .iframes-all {
+    grid-template-columns: repeat(2, 584px);
+    grid-template-rows: repeat(2, 232px);
+    row-gap: 72px;
+    column-gap: 72px;
+    margin-bottom: 232.6px;
+  }
+  .blue .iframes-all div {
+    max-width: 584px;
+    max-height: 232px;
+    overflow: hidden;
+  }
+}
 .middle {
   margin: 0;
   padding: 0;
@@ -224,12 +359,10 @@ body {
   z-index: 10;
 }
 .middle article {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 16px 0 16px;
   display: flex;
   flex-flow: column;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 .middle article h2 {
   display: inline;
@@ -261,6 +394,27 @@ body {
   margin-top: 12px;
 }
 
+@media screen and (min-width: 1440px) {
+  .middle {
+    margin: 0 auto;
+    flex-flow: row;
+    justify-content: center;
+  }
+  .middle .phone {
+    width: 457.6px;
+    margin-right: 62.4px;
+    margin-left: 200px;
+  }
+  .middle .phone img {
+    max-height: 660px;
+    max-width: 457.6px;
+    margin-top: -168.6px;
+  }
+  .middle article {
+    max-width: 464px;
+    margin-right: 256px;
+  }
+}
 .guests {
   margin: 0;
   padding: 0;
@@ -274,21 +428,38 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   font-weight: 300;
-  margin-top: 54px;
-  margin-bottom: 14px;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 54px 16px 14px 16px;
 }
 .guests .images {
-  display: flex;
-  flex-flow: column wrap;
+  /*display: flex;
+  flex-flow: column wrap;*/
   margin: 0 auto;
+  display: grid;
+  background-color: red;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 .guests .images img {
-  max-width: 320px;
-  max-height: 243px;
+  width: 100%;
 }
 
+@media screen and (min-width: 1440px) {
+  .guests h2 {
+    margin-top: 64px;
+    margin-left: 200px;
+    font-size: 48px;
+    margin-bottom: 36px;
+    max-width: 481px;
+    max-height: 62px;
+  }
+  .guests .images {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .guests .images img {
+    max-width: 480px;
+    max-height: 364px;
+  }
+}
 .others {
   margin: 0;
   padding: 0;
@@ -332,6 +503,54 @@ body {
   margin-bottom: 42px;
 }
 
+@media screen and (min-width: 700px) {
+  .others {
+    margin-bottom: 34px;
+  }
+  .others .container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+  }
+  .others .container .topic {
+    width: 160px;
+    margin-bottom: 0;
+  }
+  .others .container .topic img {
+    margin-bottom: 29px;
+  }
+  .others .container .topic h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .others {
+    margin-bottom: 34px;
+  }
+  .others h2 {
+    margin-top: 64px;
+    margin-left: 200px;
+    margin-bottom: 56px;
+    max-height: 62px;
+    max-width: 586px;
+  }
+  .others .container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 200px;
+  }
+  .others .container .topic {
+    width: 260px;
+    height: 197px;
+    margin-bottom: 0;
+  }
+  .others .container .topic img {
+    margin-bottom: 29px;
+  }
+  .others .container .topic h3 {
+    font-size: 24px;
+  }
+}
 .more-news {
   margin: 0;
   padding: 0 16px;
@@ -369,10 +588,44 @@ body {
   margin-right: 16px;
 }
 .more-news button:hover {
-  background-color: #0bec7c;
+  background: linear-gradient(to left, #0000FE, #00F0B8);
+  color: #FFFFFF;
   transition: 0.4s ease-in-out;
 }
 
+@media screen and (min-width: 700px) {
+  .more-news {
+    justify-content: center;
+    text-align: center;
+  }
+  .more-news button {
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 226px;
+    max-height: 30%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .more-news {
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .more-news h2 {
+    max-height: 62px;
+    max-width: 692px;
+    font-size: 48px;
+    margin-top: 213px;
+    margin-left: 374px;
+  }
+  .more-news button {
+    max-width: 345px;
+    height: 56px;
+    margin-bottom: 151px;
+    margin-left: 547px;
+  }
+}
 .footer {
   display: flex;
   flex-flow: column;
@@ -412,258 +665,7 @@ body {
   color: #060A24;
 }
 
-@media screen and (min-width: 700px) {
-  .header .dot {
-    color: #0000EC;
-  }
-  .header .mobile {
-    display: none;
-  }
-  .header .desktop {
-    font-family: "IBM Plex Mono", sans-serif;
-    font-size: 14px;
-    margin-right: 16px;
-    margin-top: 16px;
-    line-height: 22px;
-    margin-bottom: 0;
-    display: block;
-    max-width: 90%;
-    height: 48px;
-    font-size: 16px;
-    margin: 0;
-  }
-  .header .button-first {
-    font-size: 18px;
-    line-height: 24px;
-    max-width: 226px;
-    max-height: 30%;
-    margin-top: 20px;
-  }
-
-  .blue .iframes-all {
-    grid-template-columns: repeat(2, 284px);
-    grid-template-rows: repeat(2, 232px);
-    row-gap: 52px;
-    column-gap: 72px;
-    margin-bottom: 150px;
-  }
-  .blue .iframes-all div {
-    max-width: 584px;
-    max-height: 232px;
-    overflow: hidden;
-  }
-
-  .others {
-    margin-bottom: 34px;
-  }
-  .others .container {
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 11px;
-  }
-  .others .container .topic {
-    width: 160px;
-    margin-bottom: 0;
-  }
-  .others .container .topic img {
-    margin-bottom: 29px;
-  }
-  .others .container .topic h3 {
-    font-size: 16px;
-  }
-
-  .guests .images {
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  .guests .images img {
-    max-width: 380px;
-    max-height: 264px;
-  }
-
-  .more-news {
-    justify-content: center;
-    text-align: center;
-  }
-  .more-news button {
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 24px;
-    max-width: 226px;
-    max-height: 30%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .nav {
-    min-height: 80px;
-  }
-  .nav ul {
-    width: 550px;
-  }
-  .nav ul li {
-    float: left;
-  }
-  .nav ul li a {
-    font-size: 16px;
-    padding: 24px 26px;
-  }
-  .nav .menu {
-    margin-top: 0;
-    margin-left: 790px;
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .nav .menu-icon {
-    display: none;
-  }
-
-  .header {
-    margin-left: 200px;
-    margin-top: 120px;
-    flex-flow: row wrap;
-  }
-  .header h1 {
-    line-height: 84px;
-    font-size: 64px;
-  }
-  .header .line-through {
-    padding-right: 9px;
-  }
-  .header .dot {
-    color: #0000EC;
-  }
-  .header .mobile {
-    display: none;
-  }
-  .header .desktop {
-    font-family: "IBM Plex Mono", sans-serif;
-    font-size: 14px;
-    margin-right: 16px;
-    margin-top: 16px;
-    line-height: 22px;
-    margin-bottom: 0;
-    display: block;
-    max-width: 628px;
-    height: 48px;
-    font-size: 16px;
-    margin: 0;
-  }
-  .header .button-first {
-    font-size: 18px;
-    line-height: 24px;
-    max-width: 226px;
-    max-height: 56px;
-    margin-top: 112px;
-    margin-left: -628px;
-  }
-
-  .blue {
-    margin-top: 5px;
-    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
-  }
-  .blue h2 {
-    margin-top: 186px;
-    margin-left: 200px;
-    font-size: 48px;
-    max-width: 209px;
-    margin-bottom: 26px;
-  }
-  .blue .iframes-all {
-    grid-template-columns: repeat(2, 584px);
-    grid-template-rows: repeat(2, 232px);
-    row-gap: 72px;
-    column-gap: 72px;
-    margin-bottom: 232.6px;
-  }
-  .blue .iframes-all div {
-    max-width: 584px;
-    max-height: 232px;
-    overflow: hidden;
-  }
-
-  .middle {
-    margin: 0 auto;
-    flex-flow: row;
-    justify-content: center;
-  }
-  .middle .phone {
-    width: 457.6px;
-    margin-right: 62.4px;
-    margin-left: 200px;
-  }
-  .middle .phone img {
-    max-height: 660px;
-    max-width: 457.6px;
-    margin-top: -168.6px;
-  }
-  .middle article {
-    max-width: 464px;
-    margin-right: 256px;
-  }
-
-  .guests h2 {
-    margin-top: 64px;
-    margin-left: 200px;
-    font-size: 48px;
-    margin-bottom: 36px;
-    max-width: 481px;
-    max-height: 62px;
-  }
-  .guests .images {
-    flex-flow: row wrap;
-  }
-  .guests .images img {
-    max-width: 480px;
-    max-height: 364px;
-  }
-
-  .others {
-    margin-bottom: 34px;
-  }
-  .others h2 {
-    margin-top: 64px;
-    margin-left: 200px;
-    margin-bottom: 56px;
-    max-height: 62px;
-    max-width: 586px;
-  }
-  .others .container {
-    display: flex;
-    flex-flow: row wrap;
-    margin-left: 200px;
-  }
-  .others .container .topic {
-    width: 260px;
-    height: 197px;
-    margin-bottom: 0;
-  }
-  .others .container .topic img {
-    margin-bottom: 29px;
-  }
-  .others .container .topic h3 {
-    font-size: 24px;
-  }
-
-  .more-news {
-    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
-  }
-  .more-news h2 {
-    max-height: 62px;
-    max-width: 692px;
-    font-size: 48px;
-    margin-top: 213px;
-    margin-left: 374px;
-  }
-  .more-news button {
-    max-width: 345px;
-    height: 56px;
-    margin-bottom: 151px;
-    margin-left: 547px;
-  }
-
+@media screen and (min-width: 1000px) {
   .footer {
     flex-flow: row wrap;
     justify-content: space-between;
@@ -683,5 +685,26 @@ body {
     margin-top: 36px;
   }
 }
+/*@media screen and (min-width: 1440px){
+    .footer{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        h4{
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 1;
+            margin-top: 36px;
+            margin-left: 100px;
+        }
+        nav{
+            margin: 0;
+            .social{
+                margin-right: 100px;
+                margin-top: 36px;
+            }
+        }
+    }
+
+}*/
 
 /*# sourceMappingURL=styles.css.map */
