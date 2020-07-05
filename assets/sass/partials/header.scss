@@ -24,11 +24,18 @@
     }
     .button-first{
        @include buttons-all;
+       &:link, &:visited, &:active {
+        text-decoration: none;
+        color: #060A24;
+        }
        &:hover{
-        background: linear-gradient(to left, #0000FE, #00F0B8);
-        color:#FFFFFF;
-        transition: .4s ease-in-out;
-       }
+            background: linear-gradient(to left, #0000FE, #00F0B8);
+            transition: .4s ease-in-out;
+            &:link, &:visited, &:active {
+                color:#FFFFFF;
+                transition: .4s ease-in-out;
+            }
+        }  
     }
 }
 

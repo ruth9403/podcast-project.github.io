@@ -23,7 +23,6 @@ body {
 .nav ul li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 14px;
   color: #FFFFFF;
@@ -184,14 +183,23 @@ body {
   margin-right: 16px;
   margin-top: 36px;
   padding: 0;
-  height: 48px;
+  padding-top: 13px;
+  height: 35px;
   border: 0;
   background-color: #00F3BB;
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 16px;
+  text-align: center;
+}
+.header .button-first:link, .header .button-first:visited, .header .button-first:active {
+  text-decoration: none;
+  color: #060A24;
 }
 .header .button-first:hover {
   background: linear-gradient(to left, #0000FE, #00F0B8);
+  transition: 0.4s ease-in-out;
+}
+.header .button-first:hover:link, .header .button-first:hover:visited, .header .button-first:hover:active {
   color: #FFFFFF;
   transition: 0.4s ease-in-out;
 }
@@ -297,10 +305,23 @@ body {
   row-gap: 11px;
   margin-bottom: 143.5px;
 }
-.blue .iframes-all div {
-  max-width: 298px;
-  max-height: 225px;
+.blue .iframes-all .container-ifra {
+  position: relative;
+  width: 100%;
   overflow: hidden;
+  padding-top: 4%;
+  height: 225px;
+}
+.blue .iframes-all .container-ifra .responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent, no-repeat center/auto 70%;
 }
 
 @media screen and (min-width: 700px) {
@@ -310,11 +331,6 @@ body {
     row-gap: 52px;
     column-gap: 72px;
     margin-bottom: 150px;
-  }
-  .blue .iframes-all div {
-    max-width: 584px;
-    max-height: 232px;
-    overflow: hidden;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -336,11 +352,6 @@ body {
     column-gap: 72px;
     margin-bottom: 232.6px;
   }
-  .blue .iframes-all div {
-    max-width: 584px;
-    max-height: 232px;
-    overflow: hidden;
-  }
 }
 .middle {
   margin: 0;
@@ -358,13 +369,13 @@ body {
   position: relative;
   z-index: 10;
 }
-.middle article {
+.middle .article {
   margin: 0 auto;
   padding: 0 16px 0 16px;
   display: flex;
   flex-flow: column;
 }
-.middle article h2 {
+.middle .article h2 {
   display: inline;
   line-height: 42px;
   letter-spacing: 0;
@@ -375,12 +386,12 @@ body {
   margin-bottom: 0;
   color: #060A24;
 }
-.middle article .paragraphs {
+.middle .article .paragraphs {
   margin: 0;
   padding: 0;
   margin-top: 8px;
 }
-.middle article .paragraphs p {
+.middle .article .paragraphs p {
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 14px;
   margin-right: 16px;
@@ -390,7 +401,7 @@ body {
   margin: 0;
   padding: 0;
 }
-.middle article .paragraphs .second {
+.middle .article .paragraphs .second {
   margin-top: 12px;
 }
 
@@ -410,7 +421,7 @@ body {
     max-width: 457.6px;
     margin-top: -168.6px;
   }
-  .middle article {
+  .middle .article {
     max-width: 464px;
     margin-right: 256px;
   }
@@ -431,11 +442,8 @@ body {
   margin: 54px 16px 14px 16px;
 }
 .guests .images {
-  /*display: flex;
-  flex-flow: column wrap;*/
   margin: 0 auto;
   display: grid;
-  background-color: red;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 .guests .images img {
@@ -574,21 +582,31 @@ body {
   margin-bottom: 36px;
   text-align: center;
 }
-.more-news button {
+.more-news .button-second {
   width: 100%;
   margin-right: 16px;
   margin-top: 36px;
   padding: 0;
-  height: 48px;
+  padding-top: 13px;
+  height: 35px;
   border: 0;
   background-color: #00F3BB;
   font-family: "IBM Plex Mono", sans-serif;
   font-size: 16px;
+  text-align: center;
   margin-bottom: 67px;
   margin-right: 16px;
 }
-.more-news button:hover {
+.more-news .button-second:link, .more-news .button-second:visited, .more-news .button-second:active {
+  text-decoration: none;
+  color: #060A24;
+}
+.more-news .button-second:hover {
   background: linear-gradient(to left, #0000FE, #00F0B8);
+  color: #FFFFFF;
+  transition: 0.4s ease-in-out;
+}
+.more-news .button-second:hover:link, .more-news .button-second:hover:visited, .more-news .button-second:hover:active {
   color: #FFFFFF;
   transition: 0.4s ease-in-out;
 }
@@ -598,7 +616,7 @@ body {
     justify-content: center;
     text-align: center;
   }
-  .more-news button {
+  .more-news .button-second {
     margin: 0 auto;
     font-size: 18px;
     line-height: 24px;
@@ -619,9 +637,9 @@ body {
     margin-top: 213px;
     margin-left: 374px;
   }
-  .more-news button {
+  .more-news .button-second {
     max-width: 345px;
-    height: 56px;
+    max-height: 56px;
     margin-bottom: 151px;
     margin-left: 547px;
   }
@@ -685,26 +703,5 @@ body {
     margin-top: 36px;
   }
 }
-/*@media screen and (min-width: 1440px){
-    .footer{
-        flex-flow: row wrap;
-        justify-content: space-between;
-        h4{
-            font-size: 16px;
-            line-height: 28px;
-            font-weight: 1;
-            margin-top: 36px;
-            margin-left: 100px;
-        }
-        nav{
-            margin: 0;
-            .social{
-                margin-right: 100px;
-                margin-top: 36px;
-            }
-        }
-    }
-
-}*/
 
 /*# sourceMappingURL=styles.css.map */

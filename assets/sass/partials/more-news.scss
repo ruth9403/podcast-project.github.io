@@ -19,14 +19,22 @@
         margin-bottom: 36px;
         text-align: center;
     }
-    button{
+    .button-second{
         @include buttons-all;
         margin-bottom: 67px;
         margin-right: 16px;
+        &:link, &:visited, &:active {
+            text-decoration: none;
+            color: #060A24;
+        }
         &:hover{
             background: linear-gradient(to left, #0000FE, #00F0B8);
             color:#FFFFFF;
             transition: .4s ease-in-out;
+            &:link, &:visited, &:active {
+                color:#FFFFFF;
+                transition: .4s ease-in-out;
+            }
         }
     }
 }
@@ -34,7 +42,7 @@
     .more-news{
         justify-content: center;
         text-align: center;
-        button{
+        .button-second{
             margin: 0 auto;
             font-size: 18px;
             line-height: 24px;
@@ -55,9 +63,9 @@
             margin-top: 213px;
             margin-left: 374px;  
         }
-        button{
+        .button-second{
             max-width: 345px;
-            height: 56px;
+            max-height: 56px;
             margin-bottom: 151px;
             margin-left: 547px;
         }
